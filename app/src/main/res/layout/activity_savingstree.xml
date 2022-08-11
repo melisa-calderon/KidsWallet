@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".savingstree">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="300dp"
         android:layout_height="49dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/archivo"
         android:text="Saving Trees"
         android:textSize="24sp"
@@ -23,17 +23,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/archivo"
         android:text="General Savings"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="37dp"
         android:layout_height="18dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="112dp"
         android:text="$100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.661"
@@ -54,11 +54,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
         android:text="Add to savings tree"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button2"
