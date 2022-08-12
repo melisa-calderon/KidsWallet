@@ -4,6 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/microsoftteams_image_2"
     tools:context=".settings">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/homescreenToExploretips"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_tips_and_updates_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/homescreenToRequestmoney"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_request_quote_24" />
+
+            <ImageButton
+                android:id="@+id/homescreenToHome"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_wallet_24" />
+
+            <ImageButton
+                android:id="@+id/homescreenToSavingstree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_outline_nature_24" />
+
+            <ImageButton
+                android:id="@+id/homescreenToSettings"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                app:srcCompat="@drawable/ic_baseline_settings_24" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
