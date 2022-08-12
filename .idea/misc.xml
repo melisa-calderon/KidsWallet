@@ -6,9 +6,10 @@
         <entry key="app/src/main/res/layout/activity_addtosavingsaccount.xml" value="0.19655797101449277" />
         <entry key="app/src/main/res/layout/activity_creategoal.xml" value="0.20606884057971014" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13377075195312502" />
-        <entry key="app/src/main/res/layout/activity_savingstree.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/activity_savingstree.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.14369900271985495" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1331521739130435" />
-        <entry key="app/src/main/res/layout/homescreen.xml" value="0.5231460571289062" />
+        <entry key="app/src/main/res/layout/homescreen.xml" value="0.11191295679064764" />
         <entry key="app/src/main/res/layout/savingstree.xml" value="0.22778167724609372" />
       </map>
     </option>
