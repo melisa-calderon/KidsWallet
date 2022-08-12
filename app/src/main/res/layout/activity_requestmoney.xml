@@ -22,19 +22,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
+
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:text="Withdraw"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
 
     <Button
         android:id="@+id/button8"
@@ -54,27 +56,29 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -91,7 +95,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/homescreenToExploretips"
+                android:id="@+id/requestmoneyToExplore"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
@@ -99,7 +103,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/homescreenToRequestmoney"
+                android:id="@+id/requestmoneyToRequestmoney"
                 android:layout_width="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -107,7 +111,7 @@
                 app:srcCompat="@drawable/ic_baseline_request_quote_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToHome"
+                android:id="@+id/requestmoneyToHomescreen"
                 android:layout_width="7dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,7 +119,7 @@
                 app:srcCompat="@drawable/ic_baseline_wallet_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSavingstree"
+                android:id="@+id/requestmoneyToSavingstree"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -123,7 +127,7 @@
                 app:srcCompat="@drawable/ic_outline_nature_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSettings"
+                android:id="@+id/requestmoneyToSettings"
                 android:layout_width="3dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

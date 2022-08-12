@@ -3,11 +3,13 @@ package com.example.kidsapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton toHome;
     private ImageButton toSavingsTree;
     private ImageButton toSettings;
+    //private ImageButton creditCardImage;
 
     private static EditText checkingBalance;
     private static EditText savingsBalance;
@@ -85,6 +88,17 @@ public class MainActivity extends AppCompatActivity {
         savingsBalance = (EditText)findViewById(R.id.savingBalance);
         savingsBalance.setText( "$"+ accountinformation.getSavings() );
 
+        //creditCardImage = (ImageButton)findViewById(R.id.creditCardImage);
+//        creditCardImage.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                changeCard();
+//            }
+//        });
+
+    }
+
+    public void changeCard(){
+        return;
     }
 
 

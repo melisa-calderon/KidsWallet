@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/homescreenToExploretips"
+                android:id="@+id/exploreToExplore"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
@@ -30,7 +30,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/homescreenToRequestmoney"
+                android:id="@+id/exploreToRequestmoney"
                 android:layout_width="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -38,7 +38,7 @@
                 app:srcCompat="@drawable/ic_baseline_request_quote_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToHome"
+                android:id="@+id/exploreToHome"
                 android:layout_width="7dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -46,7 +46,7 @@
                 app:srcCompat="@drawable/ic_baseline_wallet_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSavingstree"
+                android:id="@+id/exploreToSavingstree"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -54,7 +54,7 @@
                 app:srcCompat="@drawable/ic_outline_nature_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSettings"
+                android:id="@+id/exploreToSettings"
                 android:layout_width="3dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

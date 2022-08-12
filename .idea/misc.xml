@@ -3,15 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_addtosavingsaccount.xml" value="0.319677734375" />
-        <entry key="app/src/main/res/layout/activity_creategoal.xml" value="0.2859638601109601" />
-        <entry key="app/src/main/res/layout/activity_exploretips.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_addtosavingsaccount.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_creategoal.xml" value="0.24169616699218754" />
+        <entry key="app/src/main/res/layout/activity_exploretips.xml" value="0.19082183837890626" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13377075195312502" />
         <entry key="app/src/main/res/layout/activity_requestmoney.xml" value="0.18390557141118502" />
         <entry key="app/src/main/res/layout/activity_savingstree.xml" value="0.16371459960937504" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.11671654553227875" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1331521739130435" />
-        <entry key="app/src/main/res/layout/homescreen.xml" value="0.21042633056640625" />
+        <entry key="app/src/main/res/layout/homescreen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/savingstree.xml" value="0.22778167724609372" />
       </map>
     </option>

@@ -7,6 +7,21 @@
     android:background="@drawable/savingadd"
     tools:context=".addtosavingsaccount">
 
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="372dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
@@ -17,17 +32,16 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.99" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
         android:fontFamily="@font/archivo"
         android:text="Return"
         android:textAllCaps="false"
@@ -35,46 +49,37 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="292dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -91,7 +96,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/homescreenToExploretips"
+                android:id="@+id/addsavingacctToExplore"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
@@ -99,7 +104,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
-                android:id="@+id/homescreenToRequestmoney"
+                android:id="@+id/addsavingacctToRequestmoney"
                 android:layout_width="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -107,7 +112,7 @@
                 app:srcCompat="@drawable/ic_baseline_request_quote_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToHome"
+                android:id="@+id/addsavingacctToHome"
                 android:layout_width="7dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,7 +120,7 @@
                 app:srcCompat="@drawable/ic_baseline_wallet_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSavingstree"
+                android:id="@+id/addsavingacctToSavingstree"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -123,7 +128,7 @@
                 app:srcCompat="@drawable/ic_outline_nature_24" />
 
             <ImageButton
-                android:id="@+id/homescreenToSettings"
+                android:id="@+id/addsavingacctToSettings"
                 android:layout_width="3dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
