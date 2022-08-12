@@ -1,19 +1,19 @@
 package com.example.kidsapp;
 
 public class accountinformation {
-    private double balance = 2600.00;
-    private double savings = 17321.51;
+    private static double balance = 602.45;
+    private static double savings = 1732.51;
 
-    public void setBalance(double amount){
+    public static void setBalance(double amount){
         balance = amount;
     }
-    public double getBalance(){
+    public static double getBalance(){
         return balance;
     }
-    public double getSavings(){
+    public static double getSavings(){
         return savings;
     }
-    public void setSavings(double amount){
+    public static void setSavings(double amount){
         savings = amount;
     }
 }
