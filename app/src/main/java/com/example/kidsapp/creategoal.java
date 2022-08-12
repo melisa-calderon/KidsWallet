@@ -10,6 +10,10 @@ public class creategoal extends AppCompatActivity {
     private ImageButton toHome;
     private ImageButton toSavingsTree;
     private ImageButton toSettings;
+
+    private ImageButton toReturn;
+    private ImageButton toCreateGoal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +58,13 @@ public class creategoal extends AppCompatActivity {
             }
         });
         //________________________________________________________________________________________
+
+        toReturn = (ImageButton)findViewById(R.id.creategoalToCreateGoal);
+        toReturn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(creategoal.this, settings.class));
+            }
+        });
 
     }
 }
