@@ -8,13 +8,14 @@
         <entry key="app/src/main/res/layout/activity_exploretips.xml" value="0.159375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13377075195312502" />
         <entry key="app/src/main/res/layout/activity_requestmoney.xml" value="0.2282572428385417" />
-        <entry key="app/src/main/res/layout/activity_savingstree.xml" value="0.3955164591471354" />
+        <entry key="app/src/main/res/layout/activity_savingstree.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1331521739130435" />
         <entry key="app/src/main/res/layout/homescreen.xml" value="0.32989946448284646" />
         <entry key="app/src/main/res/layout/savingstree.xml" value="0.4022750854492187" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
