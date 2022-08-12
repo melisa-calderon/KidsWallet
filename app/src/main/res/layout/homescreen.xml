@@ -4,96 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_screen"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="236dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
-        android:text="Welcome back"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/total_balance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:text="Total Balance"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name2" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="171dp"
-        android:text="$250"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
-        app:layout_constraintStart_toEndOf="@+id/total_balance"
-        app:layout_constraintTop_toBottomOf="@+id/name2" />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/archivo"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/name2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="23dp"
-        android:fontFamily="@font/archivo"
-        android:text="Sarah Smith"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="284dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/archivo"
         android:text="Transfer to Savings"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total_balance" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total_balance"
-        app:srcCompat="@android:drawable/screen_background_light" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="410dp"
-        android:layout_height="71dp"
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/homescreenToExploretips"
-                android:layout_width="81dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
                 app:srcCompat="@drawable/ic_baseline_tips_and_updates_24"
@@ -101,7 +46,7 @@
 
             <ImageButton
                 android:id="@+id/homescreenToRequestmoney"
-                android:layout_width="30dp"
+                android:layout_width="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minHeight="48dp"
@@ -109,7 +54,7 @@
 
             <ImageButton
                 android:id="@+id/homescreenToHome"
-                android:layout_width="wrap_content"
+                android:layout_width="7dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minHeight="48dp"
@@ -117,7 +62,7 @@
 
             <ImageButton
                 android:id="@+id/homescreenToSavingstree"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minHeight="48dp"
@@ -125,34 +70,12 @@
 
             <ImageButton
                 android:id="@+id/homescreenToSettings"
-                android:layout_width="wrap_content"
+                android:layout_width="3dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:minHeight="48dp"
                 app:srcCompat="@drawable/ic_baseline_settings_24" />
         </LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <TextView
-        android:id="@+id/transactions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="134dp"
-        android:fontFamily="@font/archivo"
-        android:text="Transactions"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
-        android:id="@+id/see_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="see all"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.616"
-        app:layout_constraintStart_toEndOf="@+id/transactions"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
