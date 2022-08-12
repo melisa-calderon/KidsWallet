@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">KidsApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">"Kid's Wallet"</string>
+    <string-array name="accounts_array">
+        <item>Savings ending: 1234</item>
+        <item>Checking ending: 4321</item>
+    </string-array>
 </resources>

@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/createGoal"
+        android:id="@+id/savingstreeToCreatenewgoal"
         android:layout_width="141dp"
         android:layout_height="66dp"
         android:layout_marginTop="188dp"
@@ -32,7 +32,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toEndOf="@+id/addToSavingsTree"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,5 +91,21 @@
                 app:srcCompat="@drawable/ic_baseline_settings_24" />
         </LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/disneyGoalBalance"
+        android:layout_width="34dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/archivo"
+        android:text="$250"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

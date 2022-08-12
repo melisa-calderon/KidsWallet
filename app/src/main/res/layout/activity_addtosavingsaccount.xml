@@ -7,20 +7,20 @@
     android:background="@drawable/savingadd"
     tools:context=".addtosavingsaccount">
 
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="372dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        android:text="Disney"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.534" />
 
     <Button
         android:id="@+id/button3"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.757" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/addtosavingsReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo"
@@ -54,12 +54,13 @@
         app:layout_constraintVertical_bias="0.845" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/amountToSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="$"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.447"
@@ -67,16 +68,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.349" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Spinner
+        android:id="@+id/fromAccount"
+        android:layout_width="221dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.442" />

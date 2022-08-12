@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+
+import com.google.android.material.textview.MaterialTextView;
 
 public class savingstree extends AppCompatActivity {
     private Button toSavingsTree;
@@ -18,21 +21,21 @@ public class savingstree extends AppCompatActivity {
     private ImageButton toSavingsTreeTaskBar;
     private ImageButton toSettings;
 
+    private static MaterialTextView disneyGoalBalance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_savingstree);
 
         toSavingsTree = (Button)findViewById(R.id.addToSavingsTree);
-
-        toCreateNewGoal = (Button)findViewById(R.id.createGoal);
-
         toSavingsTree.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(savingstree.this, addtosavingsaccount.class));
             }
         });
 
+        toCreateNewGoal = (Button)findViewById(R.id.savingstreeToCreatenewgoal);
         toCreateNewGoal.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(savingstree.this, creategoal.class));
@@ -85,5 +88,13 @@ public class savingstree extends AppCompatActivity {
         });
         //________________________________________________________________________________________
 
+        disneyGoalBalance = (MaterialTextView)findViewById(R.id.disneyGoalBalance);
     }
+
+
+    public static void editBalance(double newBalance){
+        System.out.println("running");
+        disneyGoalBalance.setText( "$"+ newBalance );
+    }
+
 }
