@@ -43,7 +43,7 @@ public class savingstree extends AppCompatActivity {
         toExploreTips = (ImageButton)findViewById(R.id.homescreenToExploretips);
         toExploreTips.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(savingstree.this, requestmoney.class));
+                startActivity(new Intent(MainActivity.this, requestmoney.class));
             }
         });
         //________________________________________________________________________________________
@@ -52,7 +52,7 @@ public class savingstree extends AppCompatActivity {
         toRequestMoney = (ImageButton)findViewById(R.id.homescreenToRequestmoney);
         toRequestMoney.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(savingstree.this, requestmoney.class));
+                startActivity(new Intent(MainActivity.this, requestmoney.class));
             }
         });
         //________________________________________________________________________________________
@@ -61,7 +61,7 @@ public class savingstree extends AppCompatActivity {
         toHome = (ImageButton)findViewById(R.id.homescreenToHome);
         toHome.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(savingstree.this, MainActivity.class));
+                startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
         //________________________________________________________________________________________
@@ -70,7 +70,7 @@ public class savingstree extends AppCompatActivity {
         toSavingsTreeTaskBar = (ImageButton)findViewById(R.id.homescreenToSavingstree);
         toSavingsTreeTaskBar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(savingstree.this, savingstree.class));
+                startActivity(new Intent(MainActivity.this, savingstree.class));
             }
         });
         //________________________________________________________________________________________
@@ -79,7 +79,7 @@ public class savingstree extends AppCompatActivity {
         toSettings = (ImageButton)findViewById(R.id.homescreenToSettings);
         toSettings.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(savingstree.this, settings.class));
+                startActivity(new Intent(MainActivity.this, settings.class));
             }
         });
         //________________________________________________________________________________________
