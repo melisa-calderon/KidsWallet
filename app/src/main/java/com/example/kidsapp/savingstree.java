@@ -24,6 +24,7 @@ public class savingstree extends AppCompatActivity {
         setContentView(R.layout.activity_savingstree);
 
         toSavingsTree = (Button)findViewById(R.id.addToSavingsTree);
+
         toCreateNewGoal = (Button)findViewById(R.id.createGoal);
 
         toSavingsTree.setOnClickListener(new View.OnClickListener(){
@@ -39,49 +40,49 @@ public class savingstree extends AppCompatActivity {
         });
 
 
-        //toExploreTips
-        toExploreTips = (ImageButton)findViewById(R.id.homescreenToExploretips);
-        toExploreTips.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(savingstree.this, requestmoney.class));
-            }
-        });
-        //________________________________________________________________________________________
-
-        //toRequestMoney
-        toRequestMoney = (ImageButton)findViewById(R.id.homescreenToRequestmoney);
-        toRequestMoney.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(savingstree.this, requestmoney.class));
-            }
-        });
-        //________________________________________________________________________________________
-
-        //toHome
-        toHome = (ImageButton)findViewById(R.id.homescreenToHome);
-        toHome.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(savingstree.this, MainActivity.class));
-            }
-        });
-        //________________________________________________________________________________________
-
-        //toSavingsTree
-        toSavingsTreeTaskBar = (ImageButton)findViewById(R.id.homescreenToSavingstree);
-        toSavingsTreeTaskBar.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(savingstree.this, savingstree.class));
-            }
-        });
-        //________________________________________________________________________________________
-
-        //toSettings
-        toSettings = (ImageButton)findViewById(R.id.homescreenToSettings);
-        toSettings.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(savingstree.this, settings.class));
-            }
-        });
+//        //toExploreTips
+//        toExploreTips = (ImageButton)findViewById(R.id.homescreenToExploretips);
+//        toExploreTips.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                startActivity(new Intent(savingstree.this, exploretips.class));
+//            }
+//        });
+//        //________________________________________________________________________________________
+//
+//        //toRequestMoney
+//        toRequestMoney = (ImageButton)findViewById(R.id.homescreenToRequestmoney);
+//        toRequestMoney.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                startActivity(new Intent(savingstree.this, requestmoney.class));
+//            }
+//        });
+//        //________________________________________________________________________________________
+//
+//        //toHome
+//        toHome = (ImageButton)findViewById(R.id.homescreenToHome);
+//        toHome.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                startActivity(new Intent(savingstree.this, MainActivity.class));
+//            }
+//        });
+//        //________________________________________________________________________________________
+//
+//        //toSavingsTree
+//        toSavingsTreeTaskBar = (ImageButton)findViewById(R.id.homescreenToSavingstree);
+//        toSavingsTreeTaskBar.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                startActivity(new Intent(savingstree.this, savingstree.class));
+//            }
+//        });
+//        //________________________________________________________________________________________
+//
+//        //toSettings
+//        toSettings = (ImageButton)findViewById(R.id.homescreenToSettings);
+//        toSettings.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                startActivity(new Intent(savingstree.this, settings.class));
+//            }
+//        });
         //________________________________________________________________________________________
 
     }

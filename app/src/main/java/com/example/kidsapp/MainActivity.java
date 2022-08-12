@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
@@ -16,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton toHome;
     private ImageButton toSavingsTree;
     private ImageButton toSettings;
+
+    private static EditText checkingBalance;
+    private static EditText savingsBalance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         toExploreTips = (ImageButton)findViewById(R.id.homescreenToExploretips);
         toExploreTips.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, requestmoney.class));
+                startActivity(new Intent(MainActivity.this, exploretips.class));
             }
         });
         //________________________________________________________________________________________
@@ -74,5 +79,13 @@ public class MainActivity extends AppCompatActivity {
         });
         //________________________________________________________________________________________
 
+        checkingBalance = (EditText)findViewById(R.id.checkingBalance);
+        checkingBalance.setText( "$"+ accountinformation.getBalance() );
+
+        savingsBalance = (EditText)findViewById(R.id.savingBalance);
+        savingsBalance.setText( "$"+ accountinformation.getSavings() );
+
     }
+
+
 }
